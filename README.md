@@ -1,11 +1,13 @@
-#Currency Converter App Deployment
+# Currency Converter App Deployment
 
 ## Overview
 
 This project demonstrates deploying a static currency converter web application using Docker, Docker Compose, and HAProxy as a load balancer. The app, which allows users to convert between different currencies using live exchange rates fetched from an external API, is served by two Nginx-based web servers (web-01 and web-02). HAProxy (lb-01) is used to distribute traffic between these servers, ensuring load balancing and high availability.
+
 The Currency Converter web application enables users to select currencies, input an amount, and receive the converted amount instantly. It also includes features for searching and sorting currencies, as well as dynamically updating the list of available currencies. This setup ensures that the application is robust, scalable, and capable of handling user requests efficiently.
 
 ## Features
+
 - **Currency Conversion:** Convert between different currencies using live exchange rate data.
 - **Currency Search:** Search for currencies by name or code.
 - **Currency Sorting:** Sort the list of available currencies alphabetically.
@@ -23,10 +25,9 @@ The Currency Converter web application enables users to select currencies, input
 
 ## Image Details
 
-- **Docker Hub Repository URL:** [placide625/currency-app](https://hup.docker.com/r/placide625/currency-app)
+- **Docker Hub Repository URL:** [placide625/currency-app](https://hub.docker.com/r/placide625/currency-app)
 - **Image Name:** placide625/currency-app
 - **Tag:** v1
-
 
 ### 1. Build and Push the Docker Image
 
@@ -40,7 +41,7 @@ Log in to Docker Hub and push the image:
 
 ```sh
 docker login
-docker push yourdockerhubusername/currency-app:v1
+docker push placide625/currency-app:v1
 ```
 
 Containerizing the app ensures consistency across environments and simplifies deployment.
@@ -147,5 +148,7 @@ Check the `X-Served-By` header; it should alternate between `web01` and `web02`,
 - **HAProxy**: Load balances requests between two web servers.
 - **Testing**: Confirms both servers serve traffic via the load balancer.
 
-Demo Video Watch the demo video that showcases the application running locally and on the deployed servers with the load balancer:https://youtu.be/WnorX65ptY8?si=XhyFOWzakJpBzyNA 
+Demo Video Watch the demo video that showcases the application running locally and on the deployed servers with the load balancer: [https://youtu.be/WnorX65ptY8?si=XhyFOWzakJpBzyNA](https://youtu.be/WnorX65ptY8?si=XhyFOWzakJpBzyNA)
+```
 
+This README file now includes the Docker Hub repository URL, image name, and tag, making it easy for users to access the image directly from Docker Hub.
