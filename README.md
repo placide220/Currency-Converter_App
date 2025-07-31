@@ -6,26 +6,26 @@ This project demonstrates deploying a static currency converter web application 
 The Currency Converter web application enables users to select currencies, input an amount, and receive the converted amount instantly. It also includes features for searching and sorting currencies, as well as dynamically updating the list of available currencies. This setup ensures that the application is robust, scalable, and capable of handling user requests efficiently.
 
 ## Features
-Currency Conversion: Convert between different currencies using live exchange rate data.
-Currency Search: Search for currencies by name or code.
-Currency Sorting: Sort the list of available currencies alphabetically.
-Responsive Design: The app is designed to be mobile-friendly and looks good on all screen sizes.
-User-Friendly Interface: Simple and intuitive interface with clear instructions for use.
+- **Currency Conversion:** Convert between different currencies using live exchange rate data.
+- **Currency Search:** Search for currencies by name or code.
+- **Currency Sorting:** Sort the list of available currencies alphabetically.
+- **Responsive Design:** The app is designed to be mobile-friendly and looks good on all screen sizes.
+- **User-Friendly Interface:** Simple and intuitive interface with clear instructions for use.
 
 ## Technologies Used
 
-HTML: Structure of the web application.
-CSS: Styling and layout.
-JavaScript: Handles functionality such as fetching data from the API, performing currency conversion, and updating the UI.
-API: ExchangeRate API (used for live currency rates).
+- **HTML:** Structure of the web application.
+- **CSS:** Styling and layout.
+- **JavaScript:** Handles functionality such as fetching data from the API, performing currency conversion, and updating the UI.
+- **API:** ExchangeRate API (used for live currency rates).
 
 ## Deployment Steps
 
 ## Image Details
 
-. Docker Hub Repository URL: placide625/currency-app
-. Image Name: placide625/currency-app
-. Tag:v1
+- **Docker Hub Repository URL:** [placide625/currency-app](https://hup.docker.com/r/placide625/currency-app)
+- **Image Name:** placide625/currency-app
+- **Tag:** v1
 
 
 ### 1. Build and Push the Docker Image
