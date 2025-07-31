@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Currency Converter</h1>
+        </header>
+
+        <main>
+            <div class="converted-amount">
+                <label for="amount">Enter Amount:
+                <input type="number" id="amount" placeholder="Amount to convert" required>
+        
+                </label>
+            
+            </div>
+            <div class="form">
+                <label for="from-currency">From Currency:</label>
+                <div class="dropdown-search">
+                    <input type="search" id="from-search" placeholder="Search...">
+                    <select id="from-currency" name="from-currency">
+                        <!-- Options will be dynamically loaded from API -->
+                    </select>
+                </div>
+
+                <label for="to-currency">To Currency:</label>
+                <div class="dropdown-search">
+                    <input type="search" id="to-search" placeholder="Search...">
+                    <select id="to-currency" name="to-currency">
+                        <!-- Options will be dynamically loaded from API -->
+                    </select>
+                </div>
+
+                
+
+                <button onclick="convertCurrency()">Convert</button>
+            </div>
+
+            <div class="result">
+                <h2>Converted Amount:</h2>
+                <p id="converted-amount">0</p>
+            </div>
+
+           
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

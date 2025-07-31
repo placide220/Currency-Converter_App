@@ -1,0 +1,222 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    /* Background image */
+    background: url('12.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Optional: Overlay for better contrast */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.3); /* Adjust opacity as needed */
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Make sure container is above overlay */
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 400px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.18); /* semi-transparent */
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12px); /* glass effect */
+    -webkit-backdrop-filter: blur(12px); /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* subtle border */
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+/* Form Styling */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.dropdown-search {
+    position: relative;
+}
+
+.dropdown-search input[type="search"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    background: transparent; /* Remove white background */
+    color: #222; /* Adjust for readability */
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    background: transparent; /* Remove white background */
+    color: #222; /* Adjust for readability */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Result Section */
+.result {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#converted-amount {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #4CAF50 60%, #45a049 100%);
+    padding: 16px 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(76, 175, 80, 0.15);
+    display: inline-block;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    transition: transform 0.2s;
+}
+
+#converted-amount:hover {
+    transform: scale(1.05);
+}
+
+/* Search and Sort Section */
+.search-sort {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#currency-search {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#sort-button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+}
+
+#sort-button:hover {
+    background-color: #45a049;
+}
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .form {
+        gap: 10px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    .dropdown-search input[type="search"], select {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    #currency-search {
+        max-width: 300px;
+    }
+
+    #sort-button {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .form {
+        gap: 5px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    .dropdown-search input[type="search"], select {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    #currency-search, #sort-button {
+        max-width: 200px;
+    }
+}
