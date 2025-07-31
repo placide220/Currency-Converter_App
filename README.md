@@ -21,7 +21,7 @@ API: ExchangeRate API (used for live currency rates).
 
 ## Deployment Steps
 
-##Image Details
+## Image Details
 
 . Docker Hub Repository URL: placide625/currency-app
 . Image Name: placide625/currency-app
