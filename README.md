@@ -21,12 +21,19 @@ API: ExchangeRate API (used for live currency rates).
 
 ## Deployment Steps
 
+##Image Details
+
+. Docker Hub Repository URL: placide625/currency-app
+. Image Name: placide625/currency-app
+. Tag:v1
+
+
 ### 1. Build and Push the Docker Image
 
 Build the Docker image from the project root to containerize the application:
 
 ```sh
-docker build -t yourdockerhubusername/currency-app:v1 .
+docker build -t placide625/currency-app:v1 .
 ```
 
 Log in to Docker Hub and push the image:
