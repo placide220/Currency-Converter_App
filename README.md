@@ -140,5 +140,5 @@ Check the `X-Served-By` header; it should alternate between `web01` and `web02`,
 - **HAProxy**: Load balances requests between two web servers.
 - **Testing**: Confirms both servers serve traffic via the load balancer.
 
-
+Demo Video Watch the demo video that showcases the application running locally and on the deployed servers with the load balancer:https://youtu.be/WnorX65ptY8?si=XhyFOWzakJpBzyNA 
 
